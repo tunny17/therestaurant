@@ -36,3 +36,232 @@
     transform: rotate(360deg);
   }
 } */
+
+
+
+.navigation {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3% 5% 0.2% 5%;
+  box-shadow: 0px 4px 8px 4px rgba(225, 225, 225, 0.6);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  width: 35%;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  text-transform: uppercase;
+  list-style-type: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-2 {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-container {
+  position: relative;
+}
+.cart-container img {
+  margin-top: 50%;
+  width: 1.6rem;
+  cursor: pointer;
+}
+.cart-container p {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  right: -30%;
+}
+button {
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 0.9rem 0.8rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: var(--primary-color);
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  background: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.2s ease-in-out;
+}
+
+
+
+/* ---hero section */
+
+.hero-section {
+  margin-top: 3%;
+  padding: 5%;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+h3 {
+  width: 100%;
+  font-size: 3.3rem;
+  color: var(--secondary-color);
+  font-family: 'Rubik Vinyl', cursive;
+}
+.hero-text p {
+  width: 50%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 5%;
+  color: var(--secondary-color);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+span {
+  color: var(--primary-color);
+}
+
+.cup-container {
+  width: 40%;
+}
+.plastic-cup {
+  width: 100%;
+  margin-left: 15%;
+}
+.splash-overlay1,
+.splash-overlay2
+ {
+  position: absolute;
+  top: 30%;
+  left: 57%;
+  zoom: 100%;
+  z-index: -100;
+}
+
+.splash-overlay2 {
+  top: 32%;
+  left: 0;
+  zoom: 110%;
+}
+
+
+
+/* ---menu section */
+
+.menu-section {
+  margin-top: 20%;
+  padding: 5%;
+}
+.menu-section header {
+  text-align: center;
+}
+
+.drinks-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.drink {
+  display: flex;
+  width: 400px;
+  height: 43vh;
+  margin: 1% 0;
+  border-radius: 10px;
+  background-image: url(.././src/assets/drink1.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  transition: background-size 0.4s;
+  position: relative;
+}
+.drink2 {
+  background-image: url(.././src/assets/drink2.jpg);
+}
+.drink3,
+.drink7 {
+  background-image: url(.././src/assets/drink3.jpg);
+  background-size: 130% 100%;
+  background-position: 50% 100%;
+}
+.drink4 {
+  background-image: url(.././src/assets/drink4.jpg);
+}
+.drink5 {
+  background-image: url(.././src/assets/drink5.jpg);
+}
+.drink6 {
+  background-image: url(.././src/assets/drink6.jpg);
+}
+.drink7 {
+  background-image: url(.././src/assets/drink7.jpg);
+}
+.drink-details {
+  position: absolute;
+  top: 84%;
+  width: 100%;
+  height: 7vh;
+  color: #000;
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.drink-details h4,
+.drink-details p
+ {
+  font-size: 0.9rem;
+}
+.hidden-cart {
+  width: 11%;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  transition: 0.2s ease-out;
+  visibility: hidden;
+}
+
+.drink:hover {
+  transition: background-size 0.4s;
+  background-size: 120% 120%;
+  cursor: pointer;
+}
+.drink3:hover,
+.drink7:hover
+ {
+  transition: background-size 0.4s;
+  background-size: 140% 105%;
+} 
+.drink:hover .hidden-cart {
+  visibility: visible;
+  top: 76%;
+  transition: 0.4s;
+}
